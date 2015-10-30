@@ -52,6 +52,7 @@ public enum CoinID {
     DOGECOINDARK_MAIN(DogecoindarkMain.get()),
     CLAMS_MAIN(ClamsMain.get()),
     GCR_MAIN(GcrMain.get()),
+    OKCASH_MAIN(OKCashMain.get()),
     ;
 
     private static List<CoinType> types;

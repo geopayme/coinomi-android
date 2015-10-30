@@ -27,6 +27,7 @@ import com.coinomi.core.coins.NeoscoinMain;
 import com.coinomi.core.coins.NovacoinMain;
 import com.coinomi.core.coins.NuBitsMain;
 import com.coinomi.core.coins.NuSharesMain;
+import com.coinomi.core.coins.OKCashMain;
 import com.coinomi.core.coins.ParkbyteMain;
 import com.coinomi.core.coins.PeercoinMain;
 import com.coinomi.core.coins.ReddcoinMain;
@@ -171,7 +172,9 @@ public class Constants {
             new CoinAddress(DogecoindarkMain.get(), new ServerAddress("doged-cce-1.coinomi.net", 5036),
                                                     new ServerAddress("doged-cce-2.coinomi.net", 5036)),
             new CoinAddress(GcrMain.get(),          new ServerAddress("gcr-cce-1.coinomi.net", 5038),
-                                                    new ServerAddress("gcr-cce-2.coinomi.net", 5038))
+                                                    new ServerAddress("gcr-cce-2.coinomi.net", 5038)),
+            new CoinAddress(OKCashMain.get(),       new ServerAddress("ok-cce-1.coinomi.net", 5040),  //162.248.142.89
+                                                    new ServerAddress("ok-cce-2.coinomi.net", 5040))  //162.244.30.214
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -199,6 +202,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.CANNACOIN_MAIN.getCoinType(), R.drawable.cannacoin);
         COINS_ICONS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), R.drawable.digibyte);
         COINS_ICONS.put(CoinID.NEOSCOIN_MAIN.getCoinType(), R.drawable.neoscoin);
+        COINS_ICONS.put(CoinID.OKCASH_MAIN.getCoinType(), R.drawable.okcash);
         COINS_ICONS.put(CoinID.VERTCOIN_MAIN.getCoinType(), R.drawable.vertcoin);
         COINS_ICONS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), R.drawable.jumbucks);
         COINS_ICONS.put(CoinID.VPNCOIN_MAIN.getCoinType(), R.drawable.vpncoin);
@@ -233,6 +237,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.CANNACOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ccn/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DIGIBYTE_MAIN.getCoinType(), "https://digiexplorer.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.NEOSCOIN_MAIN.getCoinType(), "http://explorer.infernopool.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.OKCASH_MAIN.getCoinType(), "https://chainz.cryptoid.info/ok/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VERTCOIN_MAIN.getCoinType(), "https://bitinfocharts.com/vertcoin/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.JUMBUCKS_MAIN.getCoinType(), "http://explorer.getjumbucks.com/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.VPNCOIN_MAIN.getCoinType(), "https://blockexperts.com/vpn/tx/%s");
@@ -266,6 +271,7 @@ public class Constants {
             MonacoinMain.get(),
             NuSharesMain.get(),
             NovacoinMain.get(),
+            OKCashMain.get(),
             GcrMain.get(),
             VpncoinMain.get(),
             VertcoinMain.get(),
